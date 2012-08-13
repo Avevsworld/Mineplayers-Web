@@ -8,6 +8,9 @@ h1, h2 { font-weight: bold; font-size: 24px; margin: 0 0 15px 0; color: #FFF; te
 h5 { font-weight:bold; text-align: center; font-size:36px; margin: 0 0 10px 0; color: #FFF; text-shadow: 2px 2px 2px #000000; margin-top: 5px;}
 h4 { text-align: center; font-size: 30px; margin: 0 0 10px 0; color: #FF0000; text-shadow: 5px 5px 5px #000000; }
 h3 { font-weight:bold; text-align: center; font-size:26px; margin: 0 0 10px 0; color: #FFF; text-shadow: 2px 2px 2px #000000; margin-top: 5px;}
+p.comando { font-style: italic; background: #111; color: #FFF; font-family: Consolas; text-align: center;}
+p.gracias { font-style: italic; font-size: 10px; text-align: right; }
+
 
 nav
 {
@@ -208,4 +211,27 @@ footer
 		        transform-origin: 0px 0px;
 	}
 /*------------END PLUGIN FORKIT-------------*/
+/*---TOOLTIPS JS-------*/
+.tooltipsy
+{
+    display: inline;
+	padding: 10px;
+    max-width: 200px;
+	opacity: 0.95;
+	color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px #1f272b;
+    border: 1px solid #1c252b;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #808080; /* old browsers */
+    background: -moz-linear-gradient(top, #A9A9A9 3%, #808080 4%, #696969 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#A9A9A9), color-stop(4%,#808080), color-stop(100%,#696969)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A9A9A9', endColorstr='#696969',GradientType=0 ); /* ie */
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* CSS3 */
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Firefox */
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Safari, Chrome */
+}
+/*----END TOOLTIP JS----*/
 /* END STYLES ALARAR */

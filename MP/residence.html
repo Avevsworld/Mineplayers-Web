@@ -15,9 +15,9 @@
 	<script src="js/forkit.js"></script>
         <nav>
             <ul class="menu">
-                <li><a onmouseover="style.backgroundColor='#87CEFA';" onmouseout="style.backgroundColor=''" href="index.html">INICIO</a></li>
+                <li><a onmouseover="style.backgroundColor='#87CEFA';" onmouseout="style.backgroundColor=''" class="active" href="index.html">INICIO</a></li>
                 <li><a onmouseover="style.backgroundColor='#87CEFA';" onmouseout="style.backgroundColor=''" href="http://mineplayers.com/foro" target="_blank">FORO</a></li>
-                <li><a onmouseover="style.backgroundColor='#87CEFA';" onmouseout="style.backgroundColor=''" class="active" href="register.html">REGISTRAR CUENTA JUEGO</a></li>
+                <li><a onmouseover="style.backgroundColor='#87CEFA';" onmouseout="style.backgroundColor=''" href="register.html">REGISTRAR CUENTA JUEGO</a></li>
                 <li><a onmouseover="style.backgroundColor='#87CEFA';" onmouseout="style.backgroundColor=''" href="conectarse.html">COMO CONECTARSE</a></li>
                 <li><a onmouseover="style.backgroundColor='#87CEFA';" onmouseout="style.backgroundColor=''" href="tutoriales.html">TUTORIALES</a></li>
                 <li><a onmouseover="style.backgroundColor='#87CEFA';" onmouseout="style.backgroundColor=''" href="multimedia.html">MULTIMEDIA</a></li>
@@ -91,24 +91,64 @@ new TWTR.Widget({
 <a href="#" target="_blank"><img align="left" src="images/banner5.png"></a>
 		</aside>
 		<div id="main">
-		<h5>Creación de cuenta de juego.</h5>
-		<a href="#">He olvidado mi contraseña.</a>
-		<a href="#">Cambiar contraseña</a>
-		</br></br>
-	<form id="form1" name="form1" method="post" action="***.php">
-		Nombre: <input type="text" name="nombre" id="nombre" required/></br>
-		Contraseña: <input type="password" name="password" id="password" required/></br>
-		E-mail:<input type="email" name="email" id="email" required/></br>
-		<input type="submit" name="enviar" id="enviar" value="Enviar">
-	</form>
-		<h4>NO FUNCIONA; ESTOY TRABAJANDO EN ELLO</h4>
-		</div>
+		<h5>Tutorial Residence</h5>
+		<p>Para un tutorial básico, ver el vídeo. Sí ya tienes conocimientos básicos de su funcionamiento, leé los comandos de despues del vídeo.</p>
+<center><object width="480" height="360"><param name="movie" value="http://www.youtube.com/v/lHhppz3M-eg?version=3&amp;hl=es_ES"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/lHhppz3M-eg?version=3&amp;hl=es_ES" type="application/x-shockwave-flash" width="480" height="360" allowscriptaccess="always" allowfullscreen="true"></embed></object></center>
+		</br><hr></hr></br><center><h1>Comandos de selección.</h1></center></br>
+		<p class="comando">
+    /res select[y] [z]</p><p>Selecciona los cubos mediante X, Y y Z. El metodo habitual es el hacha de madera, pulsar click izquierdo en una esquina y click derecho en la otra.</p>
+    <p class="comando">/res select size</p><p>Muestra el coste y el tamaño de la res seleccionada.</p>
+    <p class="comando">/res select vert</p><p>Incluye toda la vertical a lo anterioremente seleccionado, desde la posicion 0 hasta la 255.</p>
+	</br><center><h1>Comandos de información</h1></center>
+	<p class="comando">/res info (residencia name)</p><p>Muestra toda la información de la res nombrada.</p><center><a href="/" class="hastip" title="/res info Ventalia"> Ej </a></center>
+	<p class="comando">/res list (name)</p><p>Muestra la información de tus residencias o del nombre indicado en el campo opcional.</p><center><a href="/" class="hastip" title="/res list mclaz"> Ej </a></center>	
+	<p class="comando">/res listall</p><p>Muestra todas las residencias del servidor.</p></br>
+	<center><h1>Comandos de Utilidad</h1></center>
+	<p class="comando">/res message (residencia) [enter/leave] [message]</p><p>Pone un mensaje de entrada/salida a la res nombrada, se puede omitir el nombre de la res si estas dentro de esta.</p><center><a href="/" class="hastip" title="/res message Micasa enter Hola caracola!"> Ej </a></center>
+	<p class="comando">/res message (residencia) remove [enter/leave]</p><p>Elimina el mensaje de entra o salida de tú residencia.</p>
+	<p class="comando">/res rename [OldName] [NewName]</p><p>Cambia el nombre de tú residencia. Ej: /res rename spawn alarar</p>
+	<p class="comando">/res renamearea [residencia] [OldName] [NewName]</p><p>Cambia el nombre de un área de tu residencia. A veces puede dar problemas, no abusar mucho.</p></br>
+	<center><h1>Comandos de creación</h1></center>
+	<p class="comando">/res create [ResidenceName]</p><p>Crea una residencia, si has seleccionado dos puntos anteriormente, sí tienes dinero y si no hay residencias en medio.</p><center><a href="/" class="hastip" title="/res create spawn"> Ej </a></center>
+	<p class="comando">/res area (add/remove) (residence) (areaID)</p><p>Agrega/elimina una zona a una res.</p>
+	<p class="comando">/res remove [ResidenceName]</p><p>Elimina una residencia.</p>
+	<center><h1>Comandos de Flags</h1></center>
+	<p class="comando">/res set (ResidenceName) [flag] [true/false/remove]</p><p>Da o quita permisos de las flags globales de una residencia.</p><center><a href="/" class="hastip" title="/res set spawn pvp false"> Ej </a></center>
+	<p class="comando">/res gset (ResidenceName) [GroupName] [flag] [true/false/remove]</p><p>Le da/quita permisos a un grupo.</p><center><a href="/" class="hastip" title="/res gset spawn admin tp true"> Ej </a></center>
+	<p class="comando">/res pset (ResidenceName) [PlayerName] [flag] [true/false/remove]</p><p>Le da/quita permisos a una persona en concreto.</p><center><a href="/" class="hastip" title="/res pset spawn Alarar destroy true"> Ej </a></center>
+	<p class="comando">/res mirror [resaraiz] [resdestino]</p><p>Copia todos los permisos de una res a otra.</p>
+	<br><center><h1>FLAGS</h1></center>
+	<p> Aquí están las flags que se utilizan en los comandos explicadas:</p>
+	<p>    move - true deja libre movimiento </p>
+    <p>build - true deja libre construcción</p>
+    <p>use - deja libre uso de botones, placas, palancas etc.</p>
+    <p>container - deja usar baules, hornos, dispensores etc.</p>
+    <p>pvp - false no permite el PVP</p>
+    <p>ignite - false no permite el fuego</p>
+    <p>subzone - true permite crear subzonas</p>
+    <p>firespread - false no permite la propagación del fuego</p>
+    <p>damage - false no permite el daño fisico</p>
+    <p>tnt / creeper - false no permite el TNT ni la explosión de creepers</p>
+    <p>monsters - false no permite que spawneen mobs</p>
+    <p>flow - true deja fluir liquidos</p>
+    <p>tp - false no deja usar la teleportación</p>
+	<br><center><h1>Comandos de renta</h1></center>
+	<p class="comando">/res subzone [ResidenceName] [SubZoneName]</p><p>Crea una subzona dentro de una residencia de tu propiedad.</p><center><a href="/" class="hastip" title="/res subzone spawn plaza"> Ej </a></center>
+	<p class="comando">/res market rentable [Main residence name].[subplot name] [rent cost] [# of days] [repeat: true/false]</p><p>Alquila una res a el precio que tu decidas durante el tiempo que decidas cada cobro y da la posibilidad a volver a realizar o no el alquiler.</p>
+	<p class="comando">/res market [buy/info] [residence]</p><p>Compra o te informa de una residencia en venta.</p>
+	<p class="comando">/res market sell [residence] [amount]</p><p>Pone una residencia en venta al precio que eliges.</p>
+	<p class="comando">/res market unsell [residence]</p><p>Elimina una residencia de su estado de venta a normal.</p>
+	<p class="comando">/res lease [renew/cost] [residence]</p><p>Renueva o muestra el coste de una residencia.</p>
+	<p class="comando">/res market list</p><p>Muestra la lista de todas las residencias en venta.</p>
+	<center><a href="tutoriales.html">Volver a Tutoriales</a></center></br></br>
+	<p class="gracias">Vídeo by richicru y guía by Mclaz, editada ampliada y adaptada by Alarar.</p>
+	</div>
 	</div>
 	<footer>
 Mineplayers, comunidad de minecraft by <a class="hastip" title="By Alarar." target="blank_" href="https://twitter.com/#!/ave_alarar">Alarar</a> desde 2011.
 	</footer>
 <script type="text/javascript">
- $('.hastip').tooltipsy();  
+ $('.hastip').tooltipsy(); 
 </script>
 </div>
 </body>
