@@ -12,38 +12,62 @@ p.comando { font-style: italic; background: #111; color: #FFF; font-family: Cons
 p.gracias { font-style: italic; font-size: 10px; text-align: right; }
 
 
-nav
+#menu2
 {
 	width: 100%;
-	height: 100px;
+	height: 35px;
 	display: block;
-	position: absolute;
 	z-index: 3;
+    outline: 0;
+	text-align: top;
+	margin: 0px auto;
+	position: fixed;
+    text-shadow: 1px 1px #1f272b;
+    border: 1px solid #1c252b;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #808080; /* old browsers */
+    background: -moz-linear-gradient(top, #A9A9A9 3%, #808080 4%, #696969 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#A9A9A9), color-stop(4%,#808080), color-stop(100%,#696969)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3D4850', endColorstr='#232B30',GradientType=0 ); /* ie */
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* CSS3 */
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Firefox */
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Safari, Chrome */
 }
 
-nav ul.menu li
+#menu2 li
 {
 	display: inline;
-	margin: 5% 0 5% 0;
-	width: 100px;
+	text-align: center;
 }
 
-nav ul.menu li a
+#menu2 li a 
 {
-	line-height: 40px;
-	padding: 0 20px;
+	text-align: center;
 	color: #FFF;
 	font-weight: bold;
-	font-size: 26px;
+	font-size: 18px;
+	padding: 0 10px;
 	text-shadow: 3px 3px 3px #000000;
 	text-decoration: none;
 }
 
-nav ul.menu li a.active
+#menu2 li a:hover
 {
-	background: #232B30;
+	background-color: #232B30;
 	color: #FFF;
+	margin-top: -2px;
 	text-decoration: none;
+	padding-bottom:12px;
+	padding-top:20px;
+}
+
+#active
+{
+	background-color: #3C3B3C;
+	text-decoration: none;
+	color: #BDBBBF;
 }
 
 body
@@ -59,7 +83,7 @@ body
 	width: 60%;
 	height: auto;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 #todo
@@ -69,12 +93,16 @@ body
 	overflow: auto;
 }
 
+#para-error
+{
+	margin: 0px auto;
+}
 
 #main
 {
-	width: 71%;
+	width: 74%;
 	height: auto;
-	margin-top: 6%;
+	margin-top: 4%;
 	border: 1px;
 	background: #232B30;
 	float: left;
@@ -90,40 +118,14 @@ aside
 	background: #232B30;
 	width: 22%;
 	height: auto;
-	padding: 8px;
+	padding: 3px;
 	float: right;
 	margin: 0px 0px 0px 0px;
 	margin-bottom: 6%;
-	margin-top: 6%;
+	margin-top: 4%;
 	position: relative;
 	word-wrap: break-word;
 	display: inline;
-}
-
-nav ul.menu
-{
-    outline: 0;
-    padding: 5px 12px;
-    display: block;
-    color: #9fa8b0;
-    font-weight: bold;
-    text-shadow: 1px 1px #1f272b;
-    border: 1px solid #1c252b;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    background: #808080; /* old browsers */
-    background: -moz-linear-gradient(top, #A9A9A9 3%, #808080 4%, #696969 100%); /* firefox */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#A9A9A9), color-stop(4%,#808080), color-stop(100%,#696969)); /* webkit */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3D4850', endColorstr='#232B30',GradientType=0 ); /* ie */
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* CSS3 */
-    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Firefox */
-    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Safari, Chrome */
-	text-decoration: none;
-	margin: 0% 0% 8% 8%;
-	position: fixed;
-	display: inline;
-	
 }
 
 footer
@@ -153,12 +155,12 @@ footer
 	clear: left;
 	padding: 10px;
 }
+
 /*------------PLUGIN FORKIT JS-------------*/
 .forkit {
 	position: absolute;
 	right: 0;
 	top: 0;
-
 	width: 200px;
 	height: 150px;
 

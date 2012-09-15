@@ -1,0 +1,38 @@
+body
+{
+	background: url(body-error.png) no-repeat fixed;
+	font-family: Verdana, sans-serif;
+	color: #FFF;
+	margin: 0px 0px 0px 0px;
+}
+
+#wrapper
+{
+	width: 60%;
+	height: auto;
+	margin: auto;
+	margin-top: 50px;
+}
+
+#todo
+{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+#para-error
+{
+	margin: 0px auto;
+}
+
+a { text-decoration: none; color: #00BFFF; }
+a:hover { color: green; }
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+h1, h2 { font-weight: bold; font-size: 24px; margin: 0 0 15px 0; color: #FFF; text-shadow: 2px 2px 2px #000000; }
+h5 { font-weight:bold; text-align: center; font-size:36px; margin: 0 0 10px 0; color: #FFF; text-shadow: 2px 2px 2px #000000; margin-top: 5px;}
+h4 { text-align: center; font-size: 30px; margin: 0 0 10px 0; color: #FF0000; text-shadow: 5px 5px 5px #000000; }
+h3 { font-weight:bold; text-align: center; font-size:26px; margin: 0 0 10px 0; color: #FFF; text-shadow: 2px 2px 2px #000000; margin-top: 5px;}
+p.comando { font-style: italic; background: #111; color: #FFF; font-family: Consolas; text-align: center;}
+p.gracias { font-style: italic; font-size: 10px; text-align: right; }
